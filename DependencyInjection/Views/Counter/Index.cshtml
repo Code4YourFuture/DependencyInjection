@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Counter";
+}
+
+<h1>Counter Example</h1>
+
+<p>Transient Counter: @ViewBag.TransientCount</p>
+<p>Scoped Counter: @ViewBag.ScopedCount</p>
+<p>Singleton Counter: @ViewBag.SingletonCount</p>
+
+<form asp-action="Increment" asp-controller="Counter" method="post">
+    <button type="submit">Increment Counters</button>
+</form>
